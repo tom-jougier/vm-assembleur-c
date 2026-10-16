@@ -1,0 +1,14 @@
+add r1, r0, #3000
+add r2, r0, #77
+
+stw (r1)#100, r2
+ldw r3, (r1)#100
+out r3
+
+add r4, r0, #200
+add r5, r0, #88
+stw (r1)r4, r5
+ldw r6, (r1)r4
+out r6
+
+hlt

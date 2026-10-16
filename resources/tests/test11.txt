@@ -1,0 +1,5 @@
+add r1, r0, #-50
+out r1
+add r2, r1, #100
+out r2
+hlt

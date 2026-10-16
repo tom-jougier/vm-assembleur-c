@@ -1,0 +1,16 @@
+add r1, r0, #1024
+add r2, r0, #5
+
+stb (r1)#0, r2
+ldb r3, (r1)#0
+out r3
+
+sth (r1)#4, r2
+ldh r4, (r1)#4
+out r4
+
+stw (r1)#8, r2
+ldw r5, (r1)#8
+out r5
+
+hlt

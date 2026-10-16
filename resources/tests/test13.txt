@@ -1,0 +1,8 @@
+add r1, r0, #20
+jmp r1
+out r0
+out r0
+out r0
+add r2, r0, #999
+out r2
+hlt

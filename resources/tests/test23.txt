@@ -1,0 +1,8 @@
+sub r1, r0, r0
+jmp apres
+apres: jzs z_ok
+out r0
+jmp fin
+z_ok: add r2, r0, #1
+out r2
+fin: hlt

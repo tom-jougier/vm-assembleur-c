@@ -1,0 +1,9 @@
+add r1, r0, #15
+add r2, r0, #10
+or r3, r1, r2
+and r4, r1, r2
+xor r5, r1, r2
+out r3
+out r4
+out r5
+hlt

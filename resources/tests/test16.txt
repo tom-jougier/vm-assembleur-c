@@ -1,0 +1,29 @@
+sub r1, r0, r0
+jzs z_ok
+out r0
+jmp test_n
+z_ok: add r2, r0, #1
+out r2
+
+test_n: sub r3, r0, #5
+jns n_ok
+out r0
+jmp test_z0
+n_ok: add r4, r0, #1
+out r4
+
+test_z0: add r5, r0, #10
+jzc z0_ok
+out r0
+jmp test_n0
+z0_ok: add r6, r0, #1
+out r6
+
+test_n0: add r7, r0, #15
+jnc n0_ok
+out r0
+jmp fin
+n0_ok: add r8, r0, #1
+out r8
+
+fin: hlt

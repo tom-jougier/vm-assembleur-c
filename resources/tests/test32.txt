@@ -1,0 +1,6 @@
+in r1
+add r2, r1, #0
+jnc positif
+sub r1, r0, r1
+positif: out r1
+hlt

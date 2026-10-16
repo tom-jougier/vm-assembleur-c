@@ -1,0 +1,11 @@
+add r1, r0, #255
+add r2, r0, #255
+mul r3, r1, r2
+out r3
+
+add r4, r0, #256
+add r5, r0, #256
+mul r6, r4, r5
+out r6
+
+hlt

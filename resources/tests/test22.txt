@@ -1,0 +1,12 @@
+in r1
+in r2
+
+sub r3, r1, r2
+jns r2_max
+
+out r1
+jmp fin
+
+r2_max: out r2
+
+fin: hlt

@@ -1,0 +1,13 @@
+add r1, r0, #2048
+sub r2, r0, #1
+
+
+stb (r1)#0, r2
+ldb r3, (r1)#0
+out r3
+  
+sth (r1)#4, r2
+ldh r4, (r1)#4
+out r4
+
+hlt

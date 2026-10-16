@@ -1,0 +1,6 @@
+add r1, r0, #32767
+add r1, r1, #32767
+add r1, r1, #10000
+ldw r2, (r1)#0
+out r2
+hlt

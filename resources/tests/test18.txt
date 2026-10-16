@@ -1,0 +1,17 @@
+add r1, r0, #5
+shr r2, r1, #1
+jcs c_set
+out r0
+jmp test2
+c_set: add r3, r0, #100
+out r3
+
+test2: add r4, r0, #4
+shr r5, r4, #1
+jcc c_clear
+out r0
+jmp fin
+c_clear: add r6, r0, #200
+out r6
+
+fin: hlt

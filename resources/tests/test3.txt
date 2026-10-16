@@ -1,0 +1,11 @@
+ici: add r1, r0, #8
+add r2, r0, #2
+shr r3, r1, r2
+out r3
+
+add r4, r0, #8
+sub r5, r0, #2
+shr r6, r4, r5
+out r6
+
+hlt

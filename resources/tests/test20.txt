@@ -1,0 +1,9 @@
+add r1, r0, #1
+add r2, r0, #11
+
+loop: out r1
+add r1, r1, #1
+sub r3, r2, r1
+jzc loop
+
+hlt

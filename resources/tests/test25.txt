@@ -1,0 +1,4 @@
+add r1, r0, #999
+stw (r0)#0, r1
+out r1
+hlt

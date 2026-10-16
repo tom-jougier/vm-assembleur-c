@@ -1,0 +1,9 @@
+in r1
+add r2, r0, #1
+
+loop: mul r2, r2, r1
+sub r1, r1, #1
+jzc loop
+
+out r2
+hlt

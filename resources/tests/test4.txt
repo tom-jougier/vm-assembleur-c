@@ -1,0 +1,5 @@
+add r1, r0, #255
+add r2, r0, #39
+shr r3, r1, r2
+out r3
+hlt

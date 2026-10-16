@@ -1,0 +1,23 @@
+add r1, r0, #10
+stw (r10)#0, r1
+add r1, r0, #20
+stw (r10)#4, r1
+add r1, r0, #30
+stw (r10)#8, r1
+add r1, r0, #40
+stw (r10)#12, r1
+add r1, r0, #50
+stw (r10)#16, r1
+
+ldw r2, (r10)#0
+out r2
+ldw r3, (r10)#4
+out r3
+ldw r4, (r10)#8
+out r4
+ldw r5, (r10)#12
+out r5
+ldw r6, (r10)#16
+out r6
+
+hlt

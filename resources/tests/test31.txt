@@ -1,0 +1,4 @@
+in r1
+and r2, r1, #1
+out r2
+hlt
